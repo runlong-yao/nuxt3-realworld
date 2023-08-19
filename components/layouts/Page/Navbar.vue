@@ -23,8 +23,6 @@ const showDrawer = ref(false)
     <!-- content -->
     <div class="flex-1 flex items-center justify-between max-w-screen-2xl mx-auto px-4">
       <!-- title -->
-      {{ list }}
-
       <div>
         <slot name="title">
           <NuxtLink to="/"

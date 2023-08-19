@@ -6,6 +6,12 @@ const props = defineProps({
     default: 'This page is empty',
   },
 })
+
+const route = useRoute()
+
+console.log(route.path);
+
+
 </script>
 
 <template>
@@ -22,7 +28,8 @@ const props = defineProps({
       <h1>{{ emptyTip }}</h1>
     </template>
     <template #not-found>
-      <AwesomeError :code="404" wrap />
+      <AwesomeError :code="404"
+        wrap />
     </template>
   </ContentDoc>
 </template>
