@@ -1,6 +1,7 @@
 import { AppConfigInput } from 'nuxt/schema'
 
 export default defineAppConfig({
+  list: () => ['hello'],
   awesome: {
     name: 'Nuxt 3 Awesome Starter',
     description:

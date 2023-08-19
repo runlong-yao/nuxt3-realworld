@@ -4,7 +4,7 @@ export interface ICounterState {
 
 export const useCounter = definePiniaStore('counter', {
   state: (): ICounterState => ({
-    count: 0,
+    count: 1,
   }),
   actions: {
     increment() {

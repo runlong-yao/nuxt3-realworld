@@ -76,8 +76,16 @@ declare module '@nuxt/schema' {
 }
 
 export default defineAppConfig({
+  //多层配置合并，参考：
+  //https://github.com/unjs/defu#function-merger
+  //概述：
+  //1.顶层配置项优先级高于底层
+  //2.顶层元素可以加工底层传递的配置项
+  //3.如果是底层元素是数组，将会顶层元素合并到底层的尾部
+  //自定义变量
+  list: ['world'],
   awesome: {
-    name: 'Nuxt 3 Awesome Starter',
+    name: 'Nuxt 5 Awesome Starter',
     description:
       'a starter template for Nuxt 3 with minimalist themes design, built in components, drawer & menus, and more.',
     project: {
